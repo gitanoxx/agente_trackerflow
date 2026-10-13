@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trackerflow · Agente de prueba</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <div><span class="eyebrow">TRACKERFLOW</span><h1>Agente comercial</h1></div>
+        <span id="status" class="status">Comprobando…</span>
+      </header>
+      <section id="messages" class="messages" aria-live="polite"></section>
+      <form id="chat-form" class="composer">
+        <textarea id="message" rows="2" maxlength="4000" placeholder="Escribe como si fueras un cliente…" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <footer>
+        <button id="new-chat" class="secondary" type="button">Nueva conversación</button>
+        <button id="summary" class="secondary" type="button">Generar resumen</button>
+      </footer>
+      <pre id="summary-box" class="summary" hidden></pre>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
